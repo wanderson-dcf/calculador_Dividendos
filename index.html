@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/Calculator-icon.png" type="image/x-icon">
+    
+    <title>Dividendo Calculos</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Calculo de Dividendos</h1>
+        </header><!--header-->
+        <hr>
+        <section class="sectionOper">
+            <fieldset class="fieldOper">
+                <legend>
+                    <h2>Operações</h2>
+                </legend><!--legend-->
+                <div>
+                    <p>
+                        <h4>Informe a quantidade de ativos:</h4><input id="inputAtivos" type="number" placeholder="Ex: 20 Ativos" >
+                    </p>
+                    <p>
+                        <h4>Informe o valor do dividendo:</h4><input id="inputDividendos" type="number" placeholder="Ex: 0,12 cents" >
+                    </p>
+                    <p>
+                        <h4>Informe quantos meses quer ver:</h4><input id="inputMeses" type="number" placeholder="Ex: 5 Meses">
+                    </p>
+                </div>
+
+            </fieldset>
+
+        </section><!--sectionOper-->
+<!--=========================================================================================-->
+        <section class="sectionRes">
+            <fieldset class="fieldRes">
+                <legend>
+                    <h1>Resultados</h1>
+                </legend><!--legend-->
+                <table>
+                    <theader>
+                        <th>Dividendos Recebidos</th>
+                    </theader><!--theader-->
+                    <tr>
+                        <td class="tdQuest"><strong>Ganho mensal:</strong></td>
+                    </tr><!--tr-->
+                    <tr>
+                        <td id="tdGMensal" type="text" style="background: white;">Ex: 2,40 R$ Ao mês" </td>
+                    </tr><!--tr-->
+                    <tr>
+                        <td class="tdQuest"><strong>Ganho Semestral:</strong></td>
+                    </tr><!--tr-->
+                    <tr>
+                        <td id="tdGSemestral" type="text" style="background: white;">Ex: 14,40 R$ Semestral</td>
+                    </tr><!--tr-->
+                    <tr class="tdQuest">
+                        <td ><strong>Ganho Anual:</strong></td>
+                    </tr><!--tr-->
+                    <tr>
+                        <td id="tdGAnual" type="text" style="background: white;">Ex: 28,80 R$ Anual</td>
+                    </tr><!--tr-->
+                </table><!--table-->
+            </fieldset><!--fieldset-->
+        </section><!--section-->
+        <div class="divBtn">
+           <button class="btnCalc" id="botaoCalcular">Calcular</button>
+           <button class="btnReset" id="botaoResetar">Resetar</button> 
+        </div><!--divBtn-->
+    </main><!--main-->
+<script src="index.js"></script>
+</body>
+</html>
+
